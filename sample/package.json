@@ -1,0 +1,12 @@
+{
+    "type": "module",
+    "devDependencies": {
+        "@petrichorjs/config": "^1.0.2",
+        "@types/node": "^22.5.3",
+        "prettier": "^3.3.3",
+        "tsx": "^4.19.0"
+    },
+    "dependencies": {
+        "mistts": "^0.1.5"
+    }
+}

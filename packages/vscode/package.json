@@ -1,0 +1,59 @@
+{
+    "name": "vscode",
+    "version": "0.1.0",
+    "license": "MIT",
+    "displayName": "MistTs Language Features",
+    "description": "Vscode plugin for MisTs templating engine",
+    "author": "VL07",
+    "publisher": "VL07",
+    "engines": {
+        "vscode": "^1.92.0"
+    },
+    "main": "./dist/client.js",
+    "contributes": {
+        "languages": [
+            {
+                "id": "mist",
+                "extensions": [
+                    ".mist"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "mist",
+                "scopeName": "source.mist",
+                "path": "./syntaxes/mist.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "mist",
+                "path": "./snippets/mist.json"
+            }
+        ]
+    },
+    "vsce": {
+        "dependencies": false
+    },
+    "scripts": {
+        "build": "node scripts/build",
+        "watch": "npm run build -- --watch",
+        "pack": "npm run build && vsce package --pre-release",
+        "release": "npm run build && vsce publish --pre-release"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mist-ts/vscode.git"
+    },
+    "devDependencies": {
+        "lsp": "file:../lsp",
+        "@types/vscode": "^1.92.0",
+        "@volar/language-server": "^2.4.2",
+        "@volar/vscode": "^2.4.2",
+        "esbuild": "^0.23.1",
+        "@vscode/vsce": "^3.0.0",
+        "vscode-languageclient": "^9.0.1"
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "MistTs if": {
+        "prefix": [
+            "if",
+            "@if"
+        ],
+        "description": "If statement",
+        "body": [
+            "@if(${1:expression})",
+            "\t$0",
+            "@end"
+        ]
+    },
+    "MistTs elseif": {
+        "prefix": [
+            "elseif",
+            "@elseif"
+        ],
+        "description": "Elseif statement",
+        "body": [
+            "@elseif(${1:expression})",
+            "\t$0"
+        ]
+    },
+    "MistTs else": {
+        "prefix": [
+            "else",
+            "@else"
+        ],
+        "description": "Else statement",
+        "body": [
+            "@else",
+            "\t$0"
+        ]
+    },
+    "MistTs each": {
+        "prefix": [
+            "each",
+            "@each"
+        ],
+        "description": "Each statement",
+        "body": [
+            "@each(${1:variable} in ${2:iterator})",
+            "\t$0",
+            "@end"
+        ]
+    },
+    "MistTs let": {
+        "prefix": [
+            "let",
+            "@let"
+        ],
+        "description": "Let statement",
+        "body": [
+            "@let(${1:variable}${2|:, =|} $3)"
+        ]
+    },
+    "MistTs assign": {
+        "prefix": [
+            "assign",
+            "@assign"
+        ],
+        "description": "Assign statement",
+        "body": [
+            "@assign(${1:variable} = $2)"
+        ]
+    },
+    "MistTs component": {
+        "prefix": [
+            "component",
+            "@component"
+        ],
+        "description": "Component statement",
+        "body": [
+            "@component(${1:Component}, {${2:params}})",
+            "\t$0",
+            "@end"
+        ]
+    },
+    "MistTs import": {
+        "prefix": [
+            "import",
+            "@import"
+        ],
+        "description": "Import statement",
+        "body": [
+            "@import($1)"
+        ]
+    },
+    "MistTs param": {
+        "prefix": [
+            "param",
+            "@param"
+        ],
+        "description": "Param statement",
+        "body": [
+            "@param(${1:variable}: ${2:type})"
+        ]
+    },
+    "MistTs defslot": {
+        "prefix": [
+            "defslot",
+            "@defslot"
+        ],
+        "description": "Defslot statement",
+        "body": [
+            "@defslot(${1:name}: {${2:params}})"
+        ]
+    },
+    "MistTs slot": {
+        "prefix": [
+            "slot",
+            "@slot"
+        ],
+        "description": "Slot statement",
+        "body": [
+            "@slot(${1:name}, ${2:variable})",
+            "\t$0",
+            "@end"
+        ]
+    }
+}

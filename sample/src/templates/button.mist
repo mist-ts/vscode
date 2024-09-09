@@ -1,0 +1,17 @@
+<h1>
+</h1>
+
+@param(type: "button" | "link" = "button" as "button" | "link")
+@param(href: typeof type extends "link" ? string : undefined)
+
+@if(type === "button")
+    <button
+    
+
+    
+    >{{
+        
+         await a('')  }}</button>
+@else
+    
+@end

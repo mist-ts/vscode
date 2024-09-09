@@ -1,0 +1,27 @@
+{
+    "name": "lsp",
+    "version": "0.1.0",
+    "type": "module",
+    "main": "dist/index.js",
+    "files": [
+        "dist/**/*.js",
+        "dist/**/*.d.ts"
+    ],
+    "bin": {
+        "mist-lsp": "./bin/mist-lsp"
+    },
+    "dependencies": {
+        "@mistts/parser": "^0.1.1",
+        "@volar/language-core": "~2.3.0",
+        "@volar/language-server": "~2.3.0",
+        "@volar/language-service": "~2.3.0",
+        "prettier": "^2.0.0",
+        "volar-service-css": "volar-2.3",
+        "volar-service-emmet": "volar-2.3",
+        "volar-service-html": "volar-2.3",
+        "volar-service-prettier": "volar-2.3",
+        "volar-service-typescript": "volar-2.3",
+        "vscode-html-languageservice": "^5.2.0",
+        "vscode-uri": "^3.0.8"
+    }
+}
