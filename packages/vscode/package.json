@@ -5,7 +5,7 @@
     "displayName": "MistTs Language Features",
     "description": "Vscode plugin for MisTs templating engine",
     "author": "VL07",
-    "publisher": "VL07",
+    "publisher": "MistTs",
     "engines": {
         "vscode": "^1.92.0"
     },
